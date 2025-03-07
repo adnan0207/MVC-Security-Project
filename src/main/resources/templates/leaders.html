@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta charset="UTF-8">
+		<title>Leaders Page</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		
+	<div class="container">
+
+		<h3  class="display-1">Leaders Page</h3>
+        <div class="mt-4">
+           	<div class="alert alert-info">
+               	<h2>Manager Dashboard</h2>
+               	<p>This page is only accessible to users with the MANAGER role.</p>
+           	</div>
+	    </div>
+
+		<a th:href="@{/}"  class="btn btn-primary mb-3">Back to home page</a>
+
+    </div>
+	 
+	</body>
+</html>
